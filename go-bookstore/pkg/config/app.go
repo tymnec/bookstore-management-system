@@ -13,5 +13,13 @@ var (
 
 // Connect Function
 func Connect(){
+	d, err := gorm.Open("mysql", "tymnec:Nikhilsarwara@123/simplerest?")
 
+	// Check if there is an error
+	if err != nil{
+		panic(err)
+	}
+
+	db = d
 }
+
