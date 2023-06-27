@@ -12,11 +12,11 @@ var (
 )
 
 // Connect Function
-func Connect(){
-	d, err := gorm.Open("mysql", "tymnec:Nikhilsarwara@123/simplerest?")
+func Connect() {
+	d, err := gorm.Open("mysql", "tymnec:Nikhilsarwara@123/simplerest?charset=utf8&parseTime=True&loc=Local")
 
 	// Check if there is an error
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 
@@ -24,6 +24,6 @@ func Connect(){
 }
 
 // GetDB Function
-func GetDB() *gorm.DB{
+func GetDB() *gorm.DB {
 	return db
 }
