@@ -6,3 +6,11 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/mysql"
 )
+
+var (
+	db *gorm.DB
+)
+
+func Connect(){
+	
+}
