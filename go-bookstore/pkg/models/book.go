@@ -28,8 +28,14 @@ func (b *Book) CreateBook() *Book {
 	return b
 }
 
-func GetAllBooks() []Book{
+func GetAllBooks() []Book {
 	var Books []Book
 	db.Find(&Books)
 	return Books
+}
+
+func GetBookById(Id int64) (*Book, *gorm.DB) {
+	var getBook Book
+	db := db.Where("ID=?", Id).Find(&getBook)
+	return &getBook, db
 }
