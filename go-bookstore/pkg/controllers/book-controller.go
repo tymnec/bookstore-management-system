@@ -37,3 +37,7 @@ func GetBookById(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
 }
+
+func CreateBook(w http.ResponseWriter, r *http.Request) {
+	
+}
