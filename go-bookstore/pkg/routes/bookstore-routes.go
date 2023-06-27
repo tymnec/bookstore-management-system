@@ -7,3 +7,7 @@ import (
 	"githu.com/tymnec/go-bookstore/pkg/controllers"
 )
 
+var RegisterBookStoreRoutes = func(router *mux.Router) {
+	router.HandleFunc("/book/", controllers.CreateBook).Methods("POST")
+	router.HandleFunc("/book/", controllers.)
+}
