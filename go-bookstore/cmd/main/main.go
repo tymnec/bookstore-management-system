@@ -10,6 +10,8 @@ import (
 	"github.com/tymnec/go-bookstore/pkg/routes"
 )
 
+// Main Function
 func main(){
-	
+	r := mux.NewRouter()
+	routes.RegisterBookStoreRoutes(r)
 }
