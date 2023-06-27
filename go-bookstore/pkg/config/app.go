@@ -11,6 +11,7 @@ var (
 	db *gorm.DB
 )
 
+// Connect Function
 func Connect(){
-	
+
 }
