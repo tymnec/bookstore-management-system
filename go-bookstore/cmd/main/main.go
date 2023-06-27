@@ -9,3 +9,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/tymnec/go-bookstore/pkg/routes"
 )
+
+func main(){
+	
+}
