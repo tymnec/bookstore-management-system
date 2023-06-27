@@ -13,7 +13,7 @@ var (
 
 // Connect Function
 func Connect() {
-	d, err := gorm.Open("mysql", "tymnec:Nikhilsarwara@123/simplerest?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:Nikhilsarwara@123@/simplerest?charset=utf8&parseTime=True&loc=Local")
 
 	// Check if there is an error
 	if err != nil {
